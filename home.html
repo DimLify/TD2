@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit your profile</title>
+</head>
+<body>
+  <form action="/my-backend/profile" method="POST">
+    <table width="100%" cellspacing="20px;">
+      <tr>
+        <td colspan="2" style="border: 2px solid black; background-color: grey;">
+          <h2>Tell us about yourself</h2>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <h4>Profile Information</h4>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>Last Name</div>
+          <input name="lastName" type="text" style="width: 100%;"/>
+        </td>
+        <td>
+          <div>First Name</div>
+          <input name="firstName" type="text" style="width: 100%;"/>
+        </td>
+      </tr>
+      <tr>
+          <td>
+            <div>Email</div>
+            <input name="Email" type="text" style="width: 100%;"/>
+          </td>
+        
+          <td>
+            <div>Phone</div>
+            <input name="Phone" type="text" style="width: 100%;"/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div>Date of birth</div>
+            <select name="city">
+            <option value="" disabled selected>Date</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>\
+          </select>
+            <select name="month">
+            <option value="" disabled selected>Month</option>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December ">December </option>
+          </select>
+          <select name="year">
+            <option value="" disabled selected>Year</option>
+            <option value="1990">1990</option>
+            <option value="1991">1991</option>
+            <option value="1992">1992</option>
+            <option value="1993">1993</option>
+            <option value="1994">1994</option>
+            <option value="1995">1995</option>
+            <option value="1996">1996</option>
+            <option value="1997">1997</option>
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+          </td>
+        </tr>
+      
+      <tr>
+        <td colspan="2">
+          <span>Gender</span>
+          <input name="gender" type="radio" value="male"/> Male 
+          <input name="gender" type="radio" value="female"/> Female
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>Current Address</h4>
+          <select name="city">
+            <option value="" disabled selected>Province/City</option>
+            <option value="Phnom Penh">Phnom Penh</option>
+            <option value="Preyveng">Preyveng</option>
+            <option value="Battambang">Battambang</option>
+            <option value="Banteay Meanchey">Banteay Meanchey</option>
+            <option value="Kampong Chhnang">Kampong Chhnang</option>
+            <option value="KKampong Thom">Kampong Thom</option>
+            <option value="Kampong Speu">Kampong Speu</option>
+            <option value="Kampong Cham">Kampong Cham</option>
+            <option value="Kampot">Kampot</option>
+            <option value="Kandal">Kandal</option>
+            <option value="Koh Kong">Koh Kong</option>
+            <option value="Kratié">Kratié</option>
+            <option value="Mondulkiri">Mondulkiri</option>
+            <option value="Preah Vihear">Preah Vihear</option>
+            <option value="Pursat">Pursat</option>
+            <option value="Ratanak Kiri">Ratanak Kiri</option>
+            <option value="Siem Reap">Siem Reap</option>
+            <option value="Preah Sihanouk">Preah Sihanouk</option>
+            <option value="Stung Treng">Stung Treng</option>
+            <option value="Svay Rieng">Svay Rieng</option>
+            <option value="Takéo">Takéo</option>
+            <option value="Oddar Meanchey">Oddar Meanchey</option>
+            <option value="Kep">Kep</option>
+            <option value="Pailin">Pailin</option>
+            <option value="Tboung Khmum">Tboung Khmum</option>
+          </select>
+          <select name="Country">
+            <option value="" disabled selected>Country</option>
+            <option value="Cambodia">Cambodia</option>
+            <option value="ThaiLand">ThaiLand</option>
+            <option value="Veitnam">Veitnam</option>
+            <option value="Laos">Laos</option>
+          <input name="postcode" type="text" placeholder="Postcode"
+
+            
+
+
+        </select>
+        </td>
+        <td>
+          <h4>Address</h4>
+          <textarea name="address" rows="5" cols="50"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          
+          <h3 align = left><strong>Skills</strong></h3> 
+          <input name="skills" type="checkbox" value="Designing"/> Designing 
+          <input name="skills" type="checkbox" value="Coding"/> Coding 
+          <input name="skills" type="checkbox" value="Database management"/> Database management
+          <input name="skills" type="checkbox" value="Debug"/> Debug
+          <h3>Languages</h3>
+          <input name="Languages" type="checkbox" value="Thai"/> Thai
+          <input name="Languages" type="checkbox" value="Chinese"/> Chinese 
+          <input name="Languages" type="checkbox" value="French"/> French
+          <input name="Languages" type="checkbox" value="Enlish"/> English
+          <h3>Experiences</h3>
+          <tr>
+            <td>
+              <div>From</div>
+              <input Experience="From" type="text" style="width: 25%;"/>
+            </td>
+            <td>
+              <div>To</div>
+              <input Experience="To" type="text" style="width: 25%;"/>
+            </td>
+            <td>
+              <div>Description</div>
+              <input Experience="Description" type="text" style="width: 100%;"/>
+            </td>
+            <tr>
+              <tr>
+                <td>
+                  <div>From</div>
+                  <input Experience="From" type="text" style="width: 25%;"/>
+                </td>
+                <td>
+                  <div>To</div>
+                  <input Experience="To" type="text" style="width: 25%;"/>
+                </td>
+                <td>
+                  <div>Description</div>
+                  <input Experience="Description" type="text" style="width: 100%;"/>
+                </td>
+                <tr>
+                  <tr>
+                    <td>
+                      <div>From</div>
+                      <input Experience="From" type="text" style="width: 25%;"/>
+                    </td>
+                    <td>
+                      <div>To</div>
+                      <input Experience="To" type="text" style="width: 25%;"/>
+                    </td>
+                    <td>
+                      <div>Description</div>
+                      <input Experience="Description" type="text" style="width: 100%;"/>
+                    </td>
+                    <tr>
+                      <tr>
+                        <td>
+                          <div>From</div>
+                          <input Experience="From" type="text" style="width: 25%;"/>
+                        </td>
+                        <td>
+                          <div>To</div>
+                          <input Experience="To" type="text" style="width: 25%;"/>
+                        </td>
+                        <td>
+                          <div>Description</div>
+                          <input Experience="Description" type="text" style="width: 100%;"/>
+                        </td>
+                        <tr>
+                          <tr>
+                            <td>
+                              <div>From</div>
+                              <input Experience="From" type="text" style="width: 25%;"/>
+                            </td>
+                            <td>
+                              <div>To</div>
+                              <input Experience="To" type="text" style="width: 25%;"/>
+                            </td>
+                            <td>
+                              <div>Description</div>
+                              <input Experience="Description" type="text" style="width: 100%;"/>
+                            </td>
+                            <tr>
+        <td colspan="2">
+          <h4>Choose your profile photo</h4>
+          <input type="file" />
+        </td>
+      </tr>
+    </table>
+    <tr>
+    <button type="submit">Submit</button>
+    </tr>
+  </form>
+</body>
+</html>
